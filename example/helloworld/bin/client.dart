@@ -13,7 +13,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// Dart implementation of the gRPC helloworld.Greeter client.
+// Dart implementation of the gRPC helloworld.Greeter client.
+
+
 import 'package:grpc/grpc.dart';
 import 'package:helloworld/src/generated/helloworld.pbgrpc.dart';
 
@@ -24,7 +26,7 @@ Future<void> main(List<String> args) async {
     options: ChannelOptions(
       credentials: ChannelCredentials.insecure(),
       codecRegistry:
-          CodecRegistry(codecs: const [GzipCodec(), IdentityCodec()]),
+          CodecRegistry(codecs: const [GzipCodec()]),
     ),
   );
   final stub = GreeterClient(channel);
@@ -34,7 +36,7 @@ Future<void> main(List<String> args) async {
   try {
     final response = await stub.sayHello(
       HelloRequest()..name = name,
-      options: CallOptions(compression: const GzipCodec()),
+      options: CallOptions(),
     );
     print('Greeter client received: ${response.message}');
   } catch (e) {
