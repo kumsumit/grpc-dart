@@ -14,6 +14,8 @@
 // limitations under the License.
 
 /// Dart implementation of the gRPC helloworld.Greeter client.
+library;
+
 import 'dart:io';
 
 import 'package:grpc/grpc.dart';
