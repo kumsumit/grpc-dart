@@ -13,14 +13,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// Dart implementation of the gRPC helloworld.Greeter client.
-library;
-
 import 'dart:io';
 
 import 'package:grpc/grpc.dart';
 import 'package:helloworld/src/generated/helloworld.pbgrpc.dart';
 
+/// Dart implementation of the gRPC helloworld.Greeter client.
 Future<void> main(List<String> args) async {
   final udsAddress =
       InternetAddress('localhost', type: InternetAddressType.unix);
