@@ -270,7 +270,7 @@ abstract class _Harness {
   }
 
   void signalIdle() {
-    final ActiveStateHandler handler =
+    final handler =
         verify(transport.onActiveStateChanged = captureAny).captured.single;
     expect(handler, isNotNull);
     handler(false);

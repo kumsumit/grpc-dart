@@ -69,7 +69,6 @@ class RetryInfo extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static RetryInfo create() => RetryInfo._();
   RetryInfo createEmptyInstance() => create();
-  static $pb.PbList<RetryInfo> createRepeated() => $pb.PbList<RetryInfo>();
   @$core.pragma('dart2js:noInline')
   static RetryInfo getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RetryInfo>(create);
@@ -137,7 +136,6 @@ class DebugInfo extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static DebugInfo create() => DebugInfo._();
   DebugInfo createEmptyInstance() => create();
-  static $pb.PbList<DebugInfo> createRepeated() => $pb.PbList<DebugInfo>();
   @$core.pragma('dart2js:noInline')
   static DebugInfo getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DebugInfo>(create);
@@ -211,16 +209,14 @@ class QuotaFailure_Violation extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static QuotaFailure_Violation create() => QuotaFailure_Violation._();
   QuotaFailure_Violation createEmptyInstance() => create();
-  static $pb.PbList<QuotaFailure_Violation> createRepeated() =>
-      $pb.PbList<QuotaFailure_Violation>();
   @$core.pragma('dart2js:noInline')
   static QuotaFailure_Violation getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<QuotaFailure_Violation>(create);
   static QuotaFailure_Violation? _defaultInstance;
 
   /// The subject on which the quota check failed.
-  /// For example, "clientip:<ip address of client>" or "project:<Google
-  /// developer project id>".
+  /// For example, `clientip:<ip address of client>` or
+  /// `project:<Google developer project id>`.
   @$pb.TagNumber(1)
   $core.String get subject => $_getSZ(0);
   @$pb.TagNumber(1)
@@ -307,8 +303,6 @@ class QuotaFailure extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static QuotaFailure create() => QuotaFailure._();
   QuotaFailure createEmptyInstance() => create();
-  static $pb.PbList<QuotaFailure> createRepeated() =>
-      $pb.PbList<QuotaFailure>();
   @$core.pragma('dart2js:noInline')
   static QuotaFailure getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<QuotaFailure>(create);
@@ -397,7 +391,6 @@ class ErrorInfo extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static ErrorInfo create() => ErrorInfo._();
   ErrorInfo createEmptyInstance() => create();
-  static $pb.PbList<ErrorInfo> createRepeated() => $pb.PbList<ErrorInfo>();
   @$core.pragma('dart2js:noInline')
   static ErrorInfo getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ErrorInfo>(create);
@@ -505,8 +498,6 @@ class PreconditionFailure_Violation extends $pb.GeneratedMessage {
   static PreconditionFailure_Violation create() =>
       PreconditionFailure_Violation._();
   PreconditionFailure_Violation createEmptyInstance() => create();
-  static $pb.PbList<PreconditionFailure_Violation> createRepeated() =>
-      $pb.PbList<PreconditionFailure_Violation>();
   @$core.pragma('dart2js:noInline')
   static PreconditionFailure_Violation getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreconditionFailure_Violation>(create);
@@ -607,8 +598,6 @@ class PreconditionFailure extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static PreconditionFailure create() => PreconditionFailure._();
   PreconditionFailure createEmptyInstance() => create();
-  static $pb.PbList<PreconditionFailure> createRepeated() =>
-      $pb.PbList<PreconditionFailure>();
   @$core.pragma('dart2js:noInline')
   static PreconditionFailure getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<PreconditionFailure>(create);
@@ -668,8 +657,6 @@ class BadRequest_FieldViolation extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static BadRequest_FieldViolation create() => BadRequest_FieldViolation._();
   BadRequest_FieldViolation createEmptyInstance() => create();
-  static $pb.PbList<BadRequest_FieldViolation> createRepeated() =>
-      $pb.PbList<BadRequest_FieldViolation>();
   @$core.pragma('dart2js:noInline')
   static BadRequest_FieldViolation getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BadRequest_FieldViolation>(create);
@@ -748,7 +735,6 @@ class BadRequest extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static BadRequest create() => BadRequest._();
   BadRequest createEmptyInstance() => create();
-  static $pb.PbList<BadRequest> createRepeated() => $pb.PbList<BadRequest>();
   @$core.pragma('dart2js:noInline')
   static BadRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<BadRequest>(create);
@@ -807,7 +793,6 @@ class RequestInfo extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static RequestInfo create() => RequestInfo._();
   RequestInfo createEmptyInstance() => create();
-  static $pb.PbList<RequestInfo> createRepeated() => $pb.PbList<RequestInfo>();
   @$core.pragma('dart2js:noInline')
   static RequestInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RequestInfo>(create);
@@ -899,8 +884,6 @@ class ResourceInfo extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static ResourceInfo create() => ResourceInfo._();
   ResourceInfo createEmptyInstance() => create();
-  static $pb.PbList<ResourceInfo> createRepeated() =>
-      $pb.PbList<ResourceInfo>();
   @$core.pragma('dart2js:noInline')
   static ResourceInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResourceInfo>(create);
@@ -937,8 +920,8 @@ class ResourceInfo extends $pb.GeneratedMessage {
   void clearResourceName() => clearField(2);
 
   /// The owner of the resource (optional).
-  /// For example, "user:<owner email>" or "project:<Google developer project
-  /// id>".
+  /// For example, `user:<owner email>` or
+  /// `project:<Google developer project id>`.
   @$pb.TagNumber(3)
   $core.String get owner => $_getSZ(2);
   @$pb.TagNumber(3)
@@ -1013,7 +996,6 @@ class Help_Link extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static Help_Link create() => Help_Link._();
   Help_Link createEmptyInstance() => create();
-  static $pb.PbList<Help_Link> createRepeated() => $pb.PbList<Help_Link>();
   @$core.pragma('dart2js:noInline')
   static Help_Link getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Help_Link>(create);
@@ -1092,7 +1074,6 @@ class Help extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static Help create() => Help._();
   Help createEmptyInstance() => create();
-  static $pb.PbList<Help> createRepeated() => $pb.PbList<Help>();
   @$core.pragma('dart2js:noInline')
   static Help getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Help>(create);
@@ -1151,8 +1132,6 @@ class LocalizedMessage extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static LocalizedMessage create() => LocalizedMessage._();
   LocalizedMessage createEmptyInstance() => create();
-  static $pb.PbList<LocalizedMessage> createRepeated() =>
-      $pb.PbList<LocalizedMessage>();
   @$core.pragma('dart2js:noInline')
   static LocalizedMessage getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<LocalizedMessage>(create);
